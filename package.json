@@ -1,0 +1,33 @@
+{
+  "name": "@wevois/sso-client",
+  "version": "0.1.0",
+  "description": "SSO client SDK for WeVOIS portals (Next.js App Router)",
+  "private": false,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./server": "./src/server.ts",
+    "./client": "./src/client.ts",
+    "./next/login": "./src/next/login.ts",
+    "./next/callback": "./src/next/callback.ts",
+    "./next/logout": "./src/next/logout.ts"
+  },
+  "files": ["src", "README.md"],
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "next": ">=14",
+    "react": ">=18"
+  },
+  "dependencies": {
+    "jose": "^5.9.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^19.0.0",
+    "next": "^15.0.3",
+    "react": "^19.0.0",
+    "typescript": "^5.6.3"
+  }
+}
